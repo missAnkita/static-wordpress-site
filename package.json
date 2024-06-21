@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/anusha414/custom-theme-wordpress.git"
   },
-  "author": "Ankita",
+  "author": "missAnkita",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
     "your-dev-dependency": "version"
