@@ -22,7 +22,10 @@ jobs:
           php-version: '7.4'  # Specify the PHP version your WordPress site requires
 
       - name: Install Composer dependencies
-        run: composer install --no-dev --prefer-dist --optimize-autoloader
+        run: |
+           composer install --no-dev --prefer-dist --optimize-autoloader
+           curl -sS https://getcomposer.org/installer | php
+           mv composer.phar /usr/local/bin/composer
 
       - name: Install Node.js and npm
         uses: actions/setup-node@v2
